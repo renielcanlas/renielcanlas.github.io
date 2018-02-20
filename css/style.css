@@ -1,0 +1,57 @@
+#nav{
+    background:RGBA(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-out;
+    z-index: 2;
+}
+
+#sidenav-overlay{
+    z-index: -1;
+}
+
+#nav.type2{
+    background: #2196f3;
+    transition: 0.5s ease-in;
+}
+
+#bg{
+    z-index: -1;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background: url("../img/bg.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#headblur{
+    margin-top: 64px;
+    padding: 10px;
+    background:RGBA(255,255,255,0.2);
+}
+
+#nav ul a.active{
+    border-bottom: 2px solid white;
+}
+
+.shadow-1{
+    font-weight: bold;
+    text-shadow: black 2px 2px 10px;
+}
+
+.shadow-2{
+    text-shadow: black 2px 2px 20px;
+}
+
+.shadow-3{
+    text-shadow: black 2px 2px 30px;
+}
+
+#start{
+    margin-top: 500px;
+    padding:20px;
+}
+
