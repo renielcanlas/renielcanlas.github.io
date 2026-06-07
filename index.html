@@ -1,347 +1,392 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Ranielle Canlas Personal Website. Ranielle is currently working as a Software Engineer, he created this website for blogging, and showcase of GitHub repositories. ">
-		<title>Ranielle Canlas - GitHub</title>
-		<link rel="icon" href="favicon.ico" sizes="32x32">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-		<link rel="stylesheet" href="css/style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ranielle Canlas - Application Architect | Full Stack Developer | Cloud-Native Systems">
+    <title>Ranielle Canlas - Application Architect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	</head>
-	<body>
-		<nav id="nav" role="navigation">
-			<div class="nav-wrapper container">
-				<a id="logo-container" href="https://renielcanlas.github.io/" class="brand-logo hide-on-med-and-down">Ranielle Canlas</a>
-				<a id="logo-container" href="https://renielcanlas.github.io/" class="brand-logo hide-on-large-only">RCanlas</a>
-				<ul class="right hide-on-med-and-down">
-					<li><a class="active" href="#">Profile</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Repositories</a></li>
-					<li><a href="#">Contact Me</a></li>
-				</ul>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
 
-				<ul id="nav-mobile" class="side-nav">
-					<li>
-						<div class="user-view">
-							<div class="background">
-								<img src="img/side_nav.jpg" alt="Side Nav Background">
-							</div>
-							<a href="#"><img class="circle" src="img/profile_150.jpg"></a>
-							<a href="#"><span class="white-text name">Ranielle Canlas</span></a>
-							<a href="#"><span class="white-text email">raniellecanlas18k@gmail.com</span></a>
-						</div>
-					</li>
-					<li class="active"><a href="#">Profile</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Repositories</a></li>
-					<li><a href="#">Contact Me</a></li>
-				</ul>
-				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-			</div>
-		</nav>
-		<div id="bg">
-			<div id="headblur">
-				<div class="container">
-					<div class="hide-on-small-only">
-						<br><br>
-						<h1 class="header center blue-text shadow-2">
-							Hi, I am Ranielle, <br>
-							a Software Engineer
-						</h1>
-					</div>
-					<div class="hide-on-med-and-up">
-						<h1 class="header center blue-text shadow-2">Hi There!</h1>
-					</div>
-						
-						<p class="center flow-text white-text text-lighten-2 shadow-1">How may I help you?</p>
-				</div>
-			</div>
-		</div>
+        header {
+            background: linear-gradient(135deg, #0f80ff 0%, #1a8cff 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-		<div id="start">
-			<br><br><br>
-			<h4 class="header center blue-text">Skills</h4>
-			<div class="row">
-				<div class="col s12 m8 offset-m2 l4 offset-l4">
-						<ul class="collection with-header">
-							<li class="collection-header"><b>Test Automation</b></li>
-							<li class="collection-item">
-								<div>Cucumber
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>Selenium
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>TestNG
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-header"><b>Web Development</b></li>
-							<li class="collection-item">
-								<div>HTML5
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>Bootstrap / Material Design
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>CSS3
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>JSON Data / Firebase
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>JavaScript
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>Web Hosting / CPanel
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>PHP
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-										<i class="material-icons">star_border</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-header"><b>Programming</b></li>
-							<li class="collection-item">
-								<div>Oracle Java
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>Visual Basic .Net
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>C#
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-header"><b>Others</b></li>
-							<li class="collection-item">
-								<div>Git-GitHub Operations
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>Test Automation Strategy
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-							<li class="collection-item">
-								<div>Agile Methodology
-									<a href="#!" class="secondary-content">
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star</i>
-										<i class="material-icons">star_border</i>
-										<i class="material-icons">star_border</i>
-									</a>
-								</div>
-							</li>
-						</ul>
-				</div>
-			</div>
-			<br>
-			<h4 class="header center blue-text">Experience</h4>
-			<div class="row">
-				<div class="col s12 m8 offset-m2 l6 offset-l3">
-					<ul class="collection">
-						<li class="collection-item avatar">
-							<h3 class="title blue-text text-darken-2">Software Engineering Analyst</h3>
-							<p><b>Accenture</b><br>
-								July 2017 - Present
-							</p>
-						</li>
-						<li class="collection-item avatar">
-							<h3 class="title blue-text text-darken-2">OIC - Product Development Department</h3>
-							<p><b>Computer Assisted Learning</b><br>
-								Feb 2017 - June 2017
-							</p>
-						</li>
-						<li class="collection-item avatar">
-							<h3 class="title blue-text text-darken-2">Website Administrator</h3>
-							<p><b>Computer Assisted Learning</b><br>
-								June 2014 - Feb 2017
-							</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
 
-			<br>
-			<h4 class="header center blue-text">Education</h4>
-			<div class="row">
-				<div class="col m12 l4">
-					<div class="card blue-grey">
-						<div class="card-content white-text">
-							<span class="card-title">College for Research and Technology</span>
-							<p>Bachelor of Science in Information Technology</p>
-							<small>April 2014</small>
-						</div>
-					</div>
-				</div>
+        header .title {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
 
-				<div class="col m12 l4">
-					<div class="card blue-grey">
-						<div class="card-content white-text">
-							<span class="card-title">San Josef National High School</span>
-							<p>Class Valedictorian</p>
-							<small>March 2009</small>
-						</div>
-					</div>
-				</div>
+        header .contact-info {
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
 
-				<div class="col m12 l4">
-						<div class="card blue-grey">
-							<div class="card-content white-text">
-								<span class="card-title">San Josef Elementary School</span>
-								<p>Class Salutatorian</p>
-								<small>March 2005</small>
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
+        header .contact-info a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            transition: border-color 0.3s;
+        }
 
-		<footer class="page-footer blue">
-			<div class="container">
-				<div class="row">
-					<div class="col l6 s12">
-						<h5 class="white-text">Ranielle Canlas</h5>
-						<p class="grey-text text-lighten-4">I am a software engineer, skilled in front-end web development, web design, and Hybrid Mobile Applications. I am skilled in different CSS frameworks and JavaScript libraries, Mobile Hybrid Applications using Cordova/Ionic, and for back-end development, I know PHP, ASP, and I handle databases in MySQL or NoSQL. I am also skilled in Test Automation using TestNG, Selenium, Cucumber. My skill set also includes other programming languages such as Python, VB.Net, C, C++, C#</p>
-					</div>
-					<div class="col l4 offset-l2 s12">
-						<h5 class="white-text">Social Links</h5>
-						<ul>
-							<li><a class="grey-text text-lighten-3" href="https://www.facebook.com/renielcanlas"><i class="fab fa-facebook"></i> Facebook</a></li>
-							<li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/raniellecanlas/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-							<li><a class="grey-text text-lighten-3" href="https://www.instagram.com/reyuneru.sensei/"><i class="fab fa-instagram"></i> Instagram</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer-copyright blue darken-1">
-				<div class="container">
-					https://renielcanlas.github.io
-					<a class="grey-text text-lighten-4 right" href="https://github.com/renielcanlas">Complete List of Repositories</a>
-				</div>
-			</div>
-		</footer>
-		
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	</body>
+        header .contact-info a:hover {
+            border-bottom-color: white;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #0f80ff;
+            border-bottom: 3px solid #0f80ff;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        h3:first-child {
+            margin-top: 0;
+        }
+
+        .role-title {
+            font-size: 16px;
+            color: #0f80ff;
+            font-weight: 600;
+        }
+
+        .company-period {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .job-entry {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .job-entry:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .certification {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .certification:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .cert-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .cert-issuer {
+            font-size: 14px;
+            color: #0f80ff;
+            margin: 5px 0;
+        }
+
+        .cert-date {
+            font-size: 13px;
+            color: #999;
+        }
+
+        .cert-details {
+            font-size: 13px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skill-item {
+            background: #f0f5ff;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #0f80ff;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #0f80ff;
+            margin-bottom: 5px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .skill-list {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            header .title {
+                font-size: 16px;
+            }
+
+            header .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            main {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ranielle Canlas</h1>
+        <div class="title">Application Architect | Cloud-Native Systems | Java | Microservices | Azure</div>
+        <div class="contact-info">
+            <a href="mailto:raniellecanlas18@gmail.com">raniellecanlas18@gmail.com</a>
+            <span>+63931 0622 520</span>
+            <a href="https://www.linkedin.com/in/raniellecanlas/" target="_blank">LinkedIn Profile</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Professional Summary -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p class="description">
+                Seasoned software engineer with 12 years of experience in full stack development, specializing in Java, ReactJS, and AWS cloud architecture. Strong focus on building scalable backend systems, optimizing performance and concurrency, and delivering accessible, compliant web applications. Experienced in designing robust cloud-based solutions and improving system reliability and efficiency across enterprise applications.
+            </p>
+        </section>
+
+        <!-- Professional Experience -->
+        <section>
+            <h2>Professional Experience</h2>
+
+            <div class="job-entry">
+                <div class="role-title">Application Architect</div>
+                <div class="company-period">Myridius | Jan 2023 - Present</div>
+                <ul>
+                    <li>Owned end-to-end solution architecture for an enterprise platform built on Spring Boot microservices and React microfrontend architecture</li>
+                    <li>Defined enterprise architecture standards, design principles, and reference architectures to ensure scalability, resiliency, and maintainability</li>
+                    <li>Led the modernization and migration of legacy systems to cloud-native architectures, improving extensibility, performance, and operational efficiency</li>
+                    <li>Established CI/CD architecture and integrated security, vulnerability management, and compliance controls into the software delivery lifecycle</li>
+                    <li>Conducted architecture reviews and design governance to ensure alignment with enterprise standards and long-term technical strategy</li>
+                    <li>Translated complex business requirements into scalable architectural solutions across distributed systems and cloud environments</li>
+                    <li>Partnered with engineering and product stakeholders to ensure architectural consistency, system integrity, and sustainable technical direction</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="role-title">Lead Software Engineer</div>
+                <div class="company-period">Accenture | Jul 2021 - Dec 2022</div>
+                <ul>
+                    <li>Led development of a banking application using Java and Spring Boot, focusing on regulatory compliance and customer lifecycle features</li>
+                    <li>Designed and implemented Enhanced Due Diligence (EDD) and customer onboarding modules, improving compliance adherence and onboarding efficiency</li>
+                    <li>Coordinated with cross-functional teams to deliver secure, scalable, and production-ready backend services</li>
+                    <li>Ensured code quality, architectural consistency, and adherence to banking security and regulatory standards</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="role-title">Senior Developer</div>
+                <div class="company-period">Cambria Software PH | Mar 2020 - Jun 2021</div>
+                <ul>
+                    <li>Developed and maintained enterprise pharmacy applications using Java and Spring Framework, delivering feature enhancements and production fixes</li>
+                    <li>Implemented application improvements and supported production environments to ensure system stability and reliability</li>
+                    <li>Collaborated with cross-functional teams to deliver timely and high-quality software releases</li>
+                    <li>Provided technical guidance and mentorship to junior developers, ensuring adherence to coding standards and best practices</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="role-title">Software Engineer</div>
+                <div class="company-period">Infor | Jan 2019 - Mar 2020</div>
+                <ul>
+                    <li>Developed and enhanced enterprise applications using Java and Spring Boot within Infor's cloud ecosystem</li>
+                    <li>Delivered feature enhancements, system maintenance, and performance improvements across production systems</li>
+                    <li>Optimized a critical processing workflow, reducing runtime from over 3 hours to ~10 minutes through code and architectural improvements, significantly improving scalability and operational efficiency</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="role-title">Software Engineer</div>
+                <div class="company-period">Accenture | Jul 2017 - Jan 2019</div>
+                <ul>
+                    <li>Led the Automation Governance team, defining strategy, standards, and best practices for enterprise test automation platforms and tools</li>
+                    <li>Collaborated with multiple delivery teams to improve quality engineering practices and strengthen automation adoption across projects</li>
+                    <li>Developed and integrated scalable backend APIs for a global insurance client, supporting digital transformation initiatives</li>
+                    <li>Contributed to design and implementation of backend services ensuring reliability, maintainability, and system integration across platforms</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="role-title">Development Lead</div>
+                <div class="company-period">Computer Asstd Learning | Jun 2014 - Jun 2017</div>
+                <ul>
+                    <li>Led development and maintenance of the company website and managed corporate email systems to ensure reliability and availability</li>
+                    <li>Designed and built internal tools to support product development tracking and operational workflows</li>
+                    <li>Developed web-based applications including student quiz bee systems, event websites, and online registration platforms</li>
+                    <li>Contributed to the design and implementation of an e-learning system to support digital learning initiatives within the organization</li>
+                    <li>Coordinated development efforts and ensured timely delivery of internal and client-facing web solutions</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section>
+            <h2>Certifications</h2>
+
+            <div class="certification">
+                <div class="cert-title">AZ-400: Microsoft Certified: DevOps Engineer Expert</div>
+                <div class="cert-issuer">Microsoft</div>
+                <div class="cert-date">May 2026</div>
+                <div class="cert-details">Credential ID: FCC271C873A0F12F | Skills: GitHub, GitHub Actions, Microsoft Azure</div>
+            </div>
+
+            <div class="certification">
+                <div class="cert-title">AZ-104: Microsoft Certified: Azure Administrator Associate</div>
+                <div class="cert-issuer">Microsoft</div>
+                <div class="cert-date">Oct 2025</div>
+                <div class="cert-details">Credential ID: 21CE61587D1D6B8A | Skills: Microsoft Azure</div>
+            </div>
+
+            <div class="certification">
+                <div class="cert-title">AZ-900: Microsoft Certified: Azure Fundamentals</div>
+                <div class="cert-issuer">Microsoft</div>
+                <div class="cert-date">Nov 2021</div>
+                <div class="cert-details">Credential ID: I026-9664</div>
+            </div>
+        </section>
+
+        <!-- Key Skills -->
+        <section>
+            <h2>Key Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-category">Languages</div>
+                    <div class="skill-list">Java, JavaScript, TypeScript, SQL</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-category">Backend</div>
+                    <div class="skill-list">Spring Boot, Spring Framework, Microservices</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-category">Frontend</div>
+                    <div class="skill-list">ReactJS, HTML, CSS, Responsive Design</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-category">Cloud & DevOps</div>
+                    <div class="skill-list">Azure, AWS, GitHub, GitHub Actions, CI/CD</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-category">Architecture</div>
+                    <div class="skill-list">Cloud-Native, Microservices, System Design</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-category">Security</div>
+                    <div class="skill-list">Compliance, Authentication, Data Protection</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ranielle Canlas. All rights reserved.</p>
+    </footer>
+</body>
 </html>
