@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Microservices That Scale With Your Team | Ranielle Canlas</title><link rel="stylesheet" href="../details.css">
+</head>
+<body>
+    <nav><div class="nav-content"><a href="../index.html#blogs">← Back to blogs</a><button class="dark-mode-toggle" id="darkModeToggle">🌙</button></div></nav>
+    <main>
+        <div class="eyebrow">Architecture · Blog</div><h1>Designing Microservices That Scale With Your Team</h1>
+        <p class="intro">Microservices are as much an organizational design decision as they are a technical one.</p>
+        <section class="detail-section"><h2>Start with boundaries</h2><p>A service should own a meaningful business capability, its data, and the rules that govern that capability. Splitting a system by technical layers creates distributed complexity without creating useful autonomy.</p><h3>Make ownership visible</h3><p>Every service needs a clear owning team, an explicit API contract, and an operational playbook. When ownership is unclear, small changes become coordination projects and the benefits of independent delivery disappear.</p><h3>Design for operations</h3><p>Logs, metrics, traces, health checks, and safe deployment strategies should be part of the architecture from the beginning. A service is not complete when it compiles; it is complete when a team can operate it confidently in production.</p></section>
+        <section class="detail-section"><h2>Keep contracts intentional</h2><p>An API is a promise between teams. It should express the information consumers need without exposing internal implementation details. Stable, well-documented contracts reduce coordination costs and give service owners space to change their internals safely.</p><p>Versioning should be an intentional response to compatibility needs, not a default naming convention. Before creating a new version, consider whether an additive change, a tolerant consumer, or a transition period can preserve compatibility more simply.</p><h3>Prefer asynchronous boundaries when they fit</h3><p>Events can be useful when a capability needs to publish a fact and multiple consumers may react independently. They are not a replacement for clear ownership, however; event schemas and delivery behavior still need careful operational design.</p></section>
+        <section class="detail-section"><h2>Build platform consistency</h2><p>Teams move faster when common concerns have a sensible default. Templates for service setup, logging, monitoring, security checks, and delivery pipelines lower the cognitive load of starting and operating a new service.</p><p>The aim is not to make every service identical. It is to reserve variation for the parts that create business value while making the operational baseline dependable and familiar.</p></section>
+        <section class="detail-section"><h2>Practical takeaway</h2><p>Use microservices where independent change, scaling, or ownership provides real value. Keep boundaries simple, contracts explicit, and the platform capabilities consistent so teams can focus on business outcomes.</p><div class="tags"><span class="tag">Microservices</span><span class="tag">System design</span><span class="tag">Architecture</span></div></section>
+        <nav class="article-navigation" aria-label="Blog navigation"><a href="azure-delivery-pipelines.html">← Previous article</a><a href="performance-journey.html">Next article →</a></nav>
+    </main>
+    <footer>© 2026 Ranielle Canlas</footer><script src="../details.js"></script>
+</body>
+</html>

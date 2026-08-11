@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Three Hours to Ten Minutes | Ranielle Canlas</title><link rel="stylesheet" href="../details.css">
+</head>
+<body>
+    <nav><div class="nav-content"><a href="../index.html#blogs">← Back to blogs</a><button class="dark-mode-toggle" id="darkModeToggle">🌙</button></div></nav>
+    <main>
+        <div class="eyebrow">Performance · Blog</div><h1>From Three Hours to Ten Minutes: A Performance Journey</h1>
+        <p class="intro">Large performance gains usually come from understanding the whole workflow, not from one clever line of code.</p>
+        <section class="detail-section"><h2>Measure before changing</h2><p>The first step is to establish a baseline and profile the workflow. Without measurements, optimization becomes guesswork and improvements in one area can hide regressions in another.</p><h3>Look for repeated work</h3><p>Long-running processes often spend time repeating queries, transforming the same data, or waiting on work that could be grouped. Mapping the data flow makes those patterns easier to see and gives the team a shared model of the problem.</p><h3>Validate the result</h3><p>After changes are made, compare the new runtime with the original baseline and test realistic data volumes. The goal is not only a faster benchmark, but a workflow that remains predictable in production.</p></section>
+        <section class="detail-section"><h2>Follow the work through the system</h2><p>A slow process is often the sum of many reasonable decisions. A database call might be inexpensive by itself, but expensive when repeated thousands of times. A small transformation can become significant when it causes additional allocations or forces an entire data set to remain in memory.</p><p>Tracing the full path helps distinguish the actual constraint from symptoms. It also reveals whether the best fix belongs in an algorithm, data access layer, integration boundary, or orchestration flow.</p><h3>Choose changes with leverage</h3><p>Favor changes that remove categories of work rather than merely making a single operation slightly faster. Reducing round trips, processing only the data needed, and making steps more independent often produces more durable gains than micro-optimizations.</p></section>
+        <section class="detail-section"><h2>Make performance observable</h2><p>Once a workflow is improved, preserve the ability to see when it starts to degrade. Runtime, throughput, error rates, queue depth, and dependency latency can provide early signals before users experience a major impact.</p><p>Performance is not a one-time project. It is a product quality that needs a baseline, a feedback loop, and enough visibility for teams to make informed tradeoffs as the system evolves.</p></section>
+        <section class="detail-section"><h2>Outcome</h2><p>Through targeted code and architectural improvements, a critical workflow was reduced from more than three hours to approximately ten minutes—a 95% runtime reduction.</p><div class="tags"><span class="tag">Performance</span><span class="tag">Java</span><span class="tag">Optimization</span></div></section>
+        <nav class="article-navigation" aria-label="Blog navigation"><a href="designing-microservices.html">← Previous article</a><a href="azure-delivery-pipelines.html">Next article →</a></nav>
+    </main>
+    <footer>© 2026 Ranielle Canlas</footer><script src="../details.js"></script>
+</body>
+</html>

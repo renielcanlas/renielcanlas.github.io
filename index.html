@@ -357,6 +357,12 @@
             box-shadow: var(--shadow-lg);
         }
 
+        .detail-card-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
         .project-header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
             color: white;
@@ -419,6 +425,117 @@
             background: var(--primary-color);
             color: white;
         }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .blog-card {
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 22px;
+            border-top: 4px solid var(--primary-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .blog-category {
+            color: var(--primary-color);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.7px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .blog-title {
+            color: var(--text-primary);
+            font-size: 18px;
+            line-height: 1.35;
+            margin-bottom: 10px;
+        }
+
+        .blog-excerpt {
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .blog-status {
+            color: var(--text-light);
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: auto;
+        }
+
+        /* Compact, paginated content sliders */
+        .content-slider {
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.35s ease;
+        }
+
+        .slider-slide {
+            flex: 0 0 100%;
+            padding: 0 1px;
+        }
+
+        .slider-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .slider-button {
+            width: 34px;
+            height: 34px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            color: var(--primary-color);
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .slider-button:disabled {
+            cursor: not-allowed;
+            opacity: 0.4;
+        }
+
+        .slider-dots {
+            display: flex;
+            gap: 7px;
+        }
+
+        .slider-dot {
+            width: 8px;
+            height: 8px;
+            padding: 0;
+            background: var(--border-color);
+            border: 0;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .slider-dot.active { background: var(--primary-color); }
 
         /* Skills Grid */
         .skills-grid {
@@ -565,6 +682,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blogs">Blogs</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#certifications">Certifications</a></li>
             </ul>
@@ -678,14 +796,16 @@
         <!-- Portfolio -->
         <section id="portfolio" class="fade-in">
             <h2>Portfolio & Projects</h2>
-            <div class="portfolio-grid">
+            <div class="portfolio-grid content-slider" data-slider>
+                <div class="slider-track">
+                <div class="slider-slide"><a class="detail-card-link" href="portfolio/enterprise-microservices-platform.html" target="_blank" rel="noopener">
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-title">Enterprise Microservices Platform</div>
                     </div>
                     <div class="project-body">
                         <p class="project-description">
-                            Architected and led the development of a scalable enterprise platform utilizing Spring Boot microservices and React microfrontend architecture, supporting millions of transactions.
+                            Cloud-native platform architecture for high-volume enterprise workflows.
                         </p>
                         <div class="project-tech">
                             <span class="tech-badge">Java</span>
@@ -696,14 +816,16 @@
                         </div>
                     </div>
                 </div>
+                </a></div>
 
+                <div class="slider-slide"><a class="detail-card-link" href="portfolio/banking-compliance-system.html" target="_blank" rel="noopener">
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-title">Banking Compliance System</div>
                     </div>
                     <div class="project-body">
                         <p class="project-description">
-                            Designed and implemented a comprehensive banking compliance solution with Enhanced Due Diligence (EDD) and customer onboarding modules adhering to regulatory standards.
+                            Secure customer onboarding and compliance workflows for banking.
                         </p>
                         <div class="project-tech">
                             <span class="tech-badge">Java</span>
@@ -713,14 +835,16 @@
                         </div>
                     </div>
                 </div>
+                </a></div>
 
+                <div class="slider-slide"><a class="detail-card-link" href="portfolio/performance-optimization.html" target="_blank" rel="noopener">
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-title">Performance Optimization Initiative</div>
                     </div>
                     <div class="project-body">
                         <p class="project-description">
-                            Optimized critical processing workflow, achieving 95% runtime reduction (3 hours to 10 minutes) through architectural improvements and code optimization.
+                            A 95% runtime reduction for a critical production workflow.
                         </p>
                         <div class="project-tech">
                             <span class="tech-badge">Performance</span>
@@ -729,6 +853,54 @@
                             <span class="tech-badge">Optimization</span>
                         </div>
                     </div>
+                </div>
+                </a></div>
+                </div>
+                <div class="slider-controls" aria-label="Portfolio pagination">
+                    <button class="slider-button" type="button" data-slider-prev aria-label="Previous project">←</button>
+                    <div class="slider-dots" data-slider-dots></div>
+                    <button class="slider-button" type="button" data-slider-next aria-label="Next project">→</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs -->
+        <section id="blogs" class="fade-in">
+            <h2>Blogs</h2>
+            <p class="description">Practical notes on architecture, performance, and delivery.</p>
+            <div class="blog-grid content-slider" data-slider>
+                <div class="slider-track">
+                <div class="slider-slide"><a class="detail-card-link" href="blogs/designing-microservices.html" target="_blank" rel="noopener">
+                <article class="blog-card">
+                    <div class="blog-category">Architecture</div>
+                    <h3 class="blog-title">Designing Microservices That Scale With Your Team</h3>
+                    <p class="blog-excerpt">Boundaries, ownership, and operational habits for maintainable distributed systems.</p>
+                    <div class="blog-status">Read full article →</div>
+                </article>
+                </a></div>
+
+                <div class="slider-slide"><a class="detail-card-link" href="blogs/performance-journey.html" target="_blank" rel="noopener">
+                <article class="blog-card">
+                    <div class="blog-category">Performance</div>
+                    <h3 class="blog-title">From Three Hours to Ten Minutes: A Performance Journey</h3>
+                    <p class="blog-excerpt">How profiling and architectural changes transformed a critical workflow.</p>
+                    <div class="blog-status">Read full article →</div>
+                </article>
+                </a></div>
+
+                <div class="slider-slide"><a class="detail-card-link" href="blogs/azure-delivery-pipelines.html" target="_blank" rel="noopener">
+                <article class="blog-card">
+                    <div class="blog-category">Cloud & DevOps</div>
+                    <h3 class="blog-title">Building Reliable Delivery Pipelines in Azure</h3>
+                    <p class="blog-excerpt">CI/CD controls and feedback loops that make cloud delivery safer.</p>
+                    <div class="blog-status">Read full article →</div>
+                </article>
+                </a></div>
+                </div>
+                <div class="slider-controls" aria-label="Blog pagination">
+                    <button class="slider-button" type="button" data-slider-prev aria-label="Previous article">←</button>
+                    <div class="slider-dots" data-slider-dots></div>
+                    <button class="slider-button" type="button" data-slider-next aria-label="Next article">→</button>
                 </div>
             </div>
         </section>
@@ -862,6 +1034,38 @@
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
+        });
+
+        // Compact slider pagination for portfolio and blog cards
+        document.querySelectorAll('[data-slider]').forEach(slider => {
+            const track = slider.querySelector('.slider-track');
+            const slides = Array.from(slider.querySelectorAll('.slider-slide'));
+            const previousButton = slider.querySelector('[data-slider-prev]');
+            const nextButton = slider.querySelector('[data-slider-next]');
+            const dotsContainer = slider.querySelector('[data-slider-dots]');
+            let currentSlide = 0;
+
+            const dots = slides.map((_, index) => {
+                const dot = document.createElement('button');
+                dot.className = 'slider-dot';
+                dot.type = 'button';
+                dot.setAttribute('aria-label', `Go to item ${index + 1}`);
+                dot.addEventListener('click', () => updateSlider(index));
+                dotsContainer.appendChild(dot);
+                return dot;
+            });
+
+            function updateSlider(index) {
+                currentSlide = index;
+                track.style.transform = `translateX(-${currentSlide * 100}%)`;
+                previousButton.disabled = currentSlide === 0;
+                nextButton.disabled = currentSlide === slides.length - 1;
+                dots.forEach((dot, dotIndex) => dot.classList.toggle('active', dotIndex === currentSlide));
+            }
+
+            previousButton.addEventListener('click', () => updateSlider(currentSlide - 1));
+            nextButton.addEventListener('click', () => updateSlider(currentSlide + 1));
+            updateSlider(0);
         });
     </script>
 </body>
